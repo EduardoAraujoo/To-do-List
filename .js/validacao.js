@@ -1,6 +1,5 @@
-if(form.principal.value === ""){
-var valida = document.querySelector("#validando");
-valida.classList.remove("valida");
-}else{
-    console.log("Tarefa cadastrada");
+if(form.principal.value === undefined){
+    var valida = document.querySelector("#validando");
+    valida.classList.remove("valida");
+    console.log("String vazia")
 }

@@ -4,14 +4,8 @@ botaoAdicionar.addEventListener("click", function (event) {
     event.preventDefault();
 
     var form = document.querySelector("#form");
-
     createLiWithTask(form);
 })
-
-
-
-
-
 
 function createLiWithTask(form) {
     var ul = document.getElementById("ul");
