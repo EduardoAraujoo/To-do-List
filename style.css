@@ -1,10 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Arial, sans-serif;
+	font-family: 'Edu NSW ACT Foundation', cursive;
+	background: #000;
 }
-
+h1, li, input{
+	color: rgb(93, 1, 179);
+}
 .container {
 	max-width: 600px;
 	margin: 0 auto;
@@ -18,21 +24,27 @@ h1 {
 
 form {
 	display: flex;
+	width: 558px;
+	align-items: center;
+	
 }
 
 input[type="text"] {
 	flex: 1;
 	padding: 10px;
-	border: 1px solid #ccc;
+	border: 1px solid rgb(93, 1, 179);
 	border-right: none;
+	border-radius: 8px;
+	
 }
 
 button[type="submit"] {
 	padding: 10px;
-	background-color: #008CBA;
-	color: #fff;
+	background-color: #ffffff;
+	color: rgb(93, 1, 179);
 	border: none;
 	cursor: pointer;
+	border-radius: 8px;
 }
 
 -ul {
@@ -45,9 +57,20 @@ li {
 	align-items: center;
 	padding: 10px;
 	border-bottom: 1px solid #ccc;
-    
+	border-bottom: 1px solid rgb(93, 1, 179);
+    font-size: 20px;
+	justify-content: center;
 }
 
 li input[type="checkbox"] {
 	margin-right: 10px;
+}
+#validando{
+	display: none;
+}
+.valida{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 5px;
+	font-size: 16px;
 }
