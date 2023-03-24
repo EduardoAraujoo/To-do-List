@@ -1,31 +1,16 @@
 const botaoAdicionar = document.querySelector("#botao");
-var form = document.querySelector("#form");
 
-
-form.addEventListener("submit", function (event) {
+botaoAdicionar.addEventListener("click", function (event) {
     event.preventDefault();
 
-    var tarefa = colocarTarefa(form);
-    console.log(tarefa);
+    var form = document.querySelector("#form");
 
-    adicionaTarefa(tarefa);
-
+    createLiWithTask(form);
 })
 
-function colocarTarefa(form) {
-    var tarefa = {
-        tarefa: form.target.elements,
-    }
-    JSON.stringify(tarefa);
-    return tarefa
-}
-function adicionaTarefa(tarefa){
-var tarefaLi = CreateLi(tarefa);
-var ul = document.querySelector("#mae");
-ul.appendChild(tarefaLi);
-}
-function CreateLi(tarefa){
-var tarefaLi = document.createElement("li");
-tarefaLi.classList.add("tarefa")
-return tarefaLi
+function createLiWithTask(form) {
+    var ul = document.getElementById("ul");
+    var tarefaLi = document.createElement("li");
+    tarefaLi.textContent = form.principal.value;
+    ul.appendChild(tarefaLi);
 }
