@@ -1,5 +1,10 @@
-if(form.principal.value === undefined){
-    var valida = document.querySelector("#validando");
-    valida.classList.remove("valida");
-    console.log("String vazia")
+function createLiWithTask(form) {
+    var ul = document.getElementById("ul");
+    var tarefaLi = document.createElement("li");
+    tarefaLi.classList.add("invisivel");
+    tarefaLi.classList.add("tarefa");
+    tarefaLi.classList.add("tipo-de-texto");
+    tarefaLi.textContent = form.principal.value;
+    ul.appendChild(tarefaLi);
+    //tarefaLi.appendChild(botaoDeletador);
 }
