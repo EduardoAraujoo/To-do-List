@@ -1,6 +1,10 @@
 function createLiWithTask(form) {
     var ul = document.getElementById("ul");
     
+    var botaoExcluir = document.createElement("button");
+    botaoExcluir.classList.add("excluir");
+    botaoExcluir.innerHTML = "X";
+    
     var tarefaLi = document.createElement("li");
     
     tarefaLi.classList.add("invisivel");
@@ -9,11 +13,6 @@ function createLiWithTask(form) {
     tarefaLi.textContent = form.principal.value;
     
     
-    var botaoExcluir = document.createElement("button");
-    botaoExcluir.classList.add("excluir");
-    botaoExcluir.innerHTML = ""
-    
-    tarefaLi.appendChild(botaoExcluir);
     ul.appendChild(tarefaLi);
-    
+    tarefaLi.appendChild(botaoExcluir);
 }

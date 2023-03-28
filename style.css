@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 * {
 	margin: 0;
@@ -62,7 +63,6 @@ li {
 	background-color: #24273D;
 	border-bottom: 1px solid #55597C;
     font-size: 20px;
-	justify-content: center;
 	
 }
 
@@ -83,10 +83,14 @@ li input[type="checkbox"] {
 	background-color: transparent;
 	border: none;	
 	display: flex;
-	justify-content: space-around;
+	font-size: 25px;
+	font-family: 'Gloria Hallelujah', cursive;
+	margin-right: 10px;
+	transition: .5s;
 }
 .excluir:hover{
 	cursor: pointer;
+	color: #a7addb;
 }
 img{
 	background-color: transparent;
