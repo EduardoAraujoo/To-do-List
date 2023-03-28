@@ -1,8 +1,11 @@
-var ulList = document.querySelector("ul");
+var botaoDelete = document.querySelectorAll('.excluir');
 
-ulList.addEventListener("click", function (event) {
-    var alvo = event.target;
-    var paiAlvo = alvo.parentNode;
-    paiAlvo.remove();
-})
+botaoDelete.forEach(function(){
+    addEventListener("click", function (event) {
+        var alvo = event.target;
+        var paiAlvo = alvo.parentNode;
+        paiAlvo.remove();
+    })});
+
+
 
