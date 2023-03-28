@@ -8,7 +8,6 @@ botaoAdicionar.addEventListener("click", function (event) {
     if (form.principal.value === "") {
         var valida = document.querySelector("#validando");
         valida.classList.remove("valida");
-        console.log("String vazia")
     } else {
         createLiWithTask(form);
         var textoValidador = document.querySelector("#validando")

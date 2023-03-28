@@ -44,11 +44,11 @@ input[type="text"] {
 
 button[type="submit"] {
 	padding: 10px;
-	background-color: #ffffff;
+	background-color: #a7addb;
 	color: #24273D;
 	border: none;
 	cursor: pointer;
-	border-radius: 8px;
+	
 }
 
 ul {
@@ -87,6 +87,7 @@ li input[type="checkbox"] {
 	font-family: 'Gloria Hallelujah', cursive;
 	margin-right: 10px;
 	transition: .5s;
+	color: #fff;
 }
 .excluir:hover{
 	cursor: pointer;
