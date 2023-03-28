@@ -7,11 +7,3 @@ for (var i = 0; i < botaoDelete.length; i++){
         paiAlvo.remove();
     })
 }
-
-
-
-// botaoDelete.addEventListener("click", function (event) {
-//     var alvo = event.target;
-//     var paiAlvo = alvo.parentNode;
-//     paiAlvo.remove();
-// })
