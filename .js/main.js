@@ -1,8 +1,9 @@
 const botaoAdicionar = document.querySelector("#botao");
+botaoAdV = false;
 
 botaoAdicionar.addEventListener("click", function (event) {
     event.preventDefault();
-
+    botaoAdV = true;
     var form = document.querySelector("#form");
 
     if (form.principal.value === "") {
