@@ -10,14 +10,12 @@ var obj = new Object(
     li = createLiWithTask(form),
 
 
-    
+
 
     // function deleteTarefa(botaoExcluir) {
     //      for (var i = 0; i < ListaDeBotoes.length; i++) {
     //         botaoExcluir[i].addEventListener("click", function (event) {
-    //             var alvo = event.target;
-    //             var paiAlvo = alvo.parentNode;
-    //             paiAlvo.remove();
+    //             
 
     //             console.log("bom dia")
     //         })
@@ -25,28 +23,28 @@ var obj = new Object(
     // }
 
 );
-for (var i = 0; i < botaoExcluir.length; i++){ 
-const botao = botaoExcluir[i];
-botao.addEventListener("click", function(){
-    const item = this.parentNode; 
-    item.remove(); 
-
-
-
-
-
-// var paiAlvo = alvo.parentNode;
-        // paiAlvo.remove();
-})
-}
+// for (var i = 0; i < botaoExcluir.length; i++) {
+//     const botao = botaoExcluir[i];
+//     botao.addEventListener("click", function () {
+// const item = this.parentNode;
+//             item.remove();
+//         console.log("fui clicado");
+//     })
+// };
 
 
 
 function createLiWithTask(form) {
     if (botaoAdV == true) {
         var ul = document.getElementById("ul");
-
         var botaoExcluir = document.createElement("button");
+
+        botaoExcluir.addEventListener("click", (event) => {
+            var alvo = event.target;
+            var paiAlvo = alvo.parentNode;
+            paiAlvo.remove();
+        })
+
 
         botaoExcluir.classList.add("excluir")
 
