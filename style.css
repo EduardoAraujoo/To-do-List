@@ -6,8 +6,13 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
-	background: #171723;
+	background: url(images/andrew-neel-jtsW--Z6bFw-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-color: #000;
 	font-weight: 200;
+}
+body{
+	background: transparent;
 }
 h1, li, input{
 	color: #a7addb;
@@ -18,11 +23,15 @@ h1, li, input{
 	padding: 20px;
 	margin-top: 20px;
 	height: auto;
+	background: transparent
 }
-
+p{
+	background: transparent
+}
 h1 {
 	text-align: center;
 	margin-bottom: 20px;
+	background: transparent
 }
 
 form {
@@ -30,7 +39,7 @@ form {
 	align-items: center;
 	width: 370px;
 	margin: auto;
-	background-color: #24273D;
+	background: transparent
 }
 
 input[type="text"] {
@@ -38,17 +47,15 @@ input[type="text"] {
 	padding: 10px;
 	border: 1px solid #24273D;
 	border-right: none;
-	background-color: #24273D;
+	background: transparent
 	
 }
 
 button[type="submit"] {
 	padding: 10px;
-	background-color: #a7addb;
-	color: #24273D;
+	background-color: #ff0000;
 	border: none;
-	cursor: pointer;
-	
+	cursor: pointer;	
 }
 
 ul {

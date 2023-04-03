@@ -45,9 +45,7 @@ function createLiWithTask(form) {
             paiAlvo.remove();
         })
 
-
         botaoExcluir.classList.add("excluir")
-
         botaoExcluir.innerHTML = "X";
         ListaDeBotoes.push(botaoExcluir);
 
@@ -57,7 +55,6 @@ function createLiWithTask(form) {
         tarefaLi.classList.add("tarefa");
         tarefaLi.classList.add("tipo-de-texto");
         tarefaLi.textContent = form.principal.value;
-
 
         ul.appendChild(tarefaLi);
         tarefaLi.appendChild(botaoExcluir);
