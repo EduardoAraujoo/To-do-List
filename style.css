@@ -6,32 +6,36 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
-	background: url(images/andrew-neel-jtsW--Z6bFw-unsplash.jpg);
-	background-repeat: repeat-y;
-	background-color: #000;
 	font-weight: 200;
+	
 }
+
+.imagem{
+	background-color: #a7addb;
+	height: 250px;
+	width: 100%;
+	position: relative
+}
+
 body{
-	background: transparent;
+	background-image: linear-gradient(to right, rgb(22, 214, 118), rgb(30, 165, 120));
+	margin: 0;
 }
 h1, li, input{
-	color: #a7addb;
+	color: #001cf3;
 }
 .container {
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 20px;
-	margin-top: 20px;
+	margin-top: -178px;
 	height: auto;
-	background: transparent
+	position: relative;
 }
-p{
-	background: transparent
-}
+
 h1 {
 	text-align: center;
 	margin-bottom: 20px;
-	background: transparent
 }
 
 form {
@@ -39,7 +43,6 @@ form {
 	align-items: center;
 	width: 370px;
 	margin: auto;
-	background: transparent
 }
 
 input[type="text"] {
@@ -47,12 +50,10 @@ input[type="text"] {
 	padding: 10px;
 	border: 1px solid #24273D;
 	border-right: none;
-	background: transparent
 }
 
 #botao{
-	padding: 10px;
-	background-color: #ffffff;
+	padding: 10px;	
 	border: none;
 	cursor: pointer;	
 }
@@ -66,10 +67,8 @@ li {
 	display: flex;
 	align-items: center;
 	padding: 10px;
-	background-color: #24273D;
 	border-bottom: 1px solid #55597C;
-    font-size: 20px;
-	
+    font-size: 20px;	
 }
 
 li input[type="checkbox"] {
@@ -86,7 +85,6 @@ li input[type="checkbox"] {
 }
 
 .excluir{
-	background-color: transparent;
 	border: none;	
 	display: flex;
 	font-size: 25px;
@@ -97,5 +95,4 @@ li input[type="checkbox"] {
 }
 .excluir:hover{
 	cursor: pointer;
-	color: #a7addb;
 }
