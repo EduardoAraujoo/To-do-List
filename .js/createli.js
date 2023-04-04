@@ -38,6 +38,7 @@ function createLiWithTask(form) {
     if (botaoAdV == true) {
         var ul = document.getElementById("ul");
         var botaoExcluir = document.createElement("button");
+        var checkBox = document.createElement("input");
 
         botaoExcluir.addEventListener("click", (event) => {
             var alvo = event.target;
@@ -49,6 +50,9 @@ function createLiWithTask(form) {
         botaoExcluir.innerHTML = "X";
         ListaDeBotoes.push(botaoExcluir);
 
+        checkBox.classList.add("check");
+        checkBox.type = 'checkbox';
+
         var tarefaLi = document.createElement("li");
 
         tarefaLi.classList.add("invisivel");
@@ -56,9 +60,13 @@ function createLiWithTask(form) {
         tarefaLi.classList.add("tipo-de-texto");
         tarefaLi.textContent = form.principal.value;
 
+        //AFILIANDO 
+
         ul.appendChild(tarefaLi);
+        tarefaLi.appendChild(checkBox);
         tarefaLi.appendChild(botaoExcluir);
-    } else { }
+        
+    } else {}
 }
 
 console.log(ListaDeBotoes);
