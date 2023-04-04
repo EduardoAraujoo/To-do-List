@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
 	background: url(images/andrew-neel-jtsW--Z6bFw-unsplash.jpg);
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	background-color: #000;
 	font-weight: 200;
 }
@@ -48,12 +48,11 @@ input[type="text"] {
 	border: 1px solid #24273D;
 	border-right: none;
 	background: transparent
-	
 }
 
-button[type="submit"] {
+#botao{
 	padding: 10px;
-	background-color: #ff0000;
+	background-color: #ffffff;
 	border: none;
 	cursor: pointer;	
 }
@@ -99,7 +98,4 @@ li input[type="checkbox"] {
 .excluir:hover{
 	cursor: pointer;
 	color: #a7addb;
-}
-img{
-	background-color: transparent;
 }
