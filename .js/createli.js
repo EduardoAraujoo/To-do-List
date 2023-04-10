@@ -8,6 +8,7 @@ function createLiWithTask(form) {
             var alvo = event.target;
             var paiAlvo = alvo.parentNode;
             paiAlvo.remove();
+            updateTarefas();
         })
 
         //ADICIONANDO CLASSES E TYPES   
@@ -21,27 +22,31 @@ function createLiWithTask(form) {
 
         checkBox.addEventListener('change', function () {
             if (this.checked) {
-                tarefaLi.classList.add("risca");
+                tarefas.classList.add("risca");
             } else {
-                tarefaLi.classList.remove("risca");
+                tarefas.classList.remove("risca");
             }
         });
 
-        var tarefaLi = document.createElement("li");
+        var tarefas = document.createElement("li");
 
-        tarefaLi.classList.add("invisivel");
-        tarefaLi.classList.add("tarefa");
-        tarefaLi.classList.add("tipo-de-texto");
-        tarefaLi.textContent = form.principal.value;
+        tarefas.classList.add("invisivel");
+        tarefas.classList.add("tarefa");
+        tarefas.classList.add("tipo-de-texto");
+        tarefas.textContent = form.principal.value;
 
         //AFILIANDO 
 
-        ul.appendChild(tarefaLi);
-        tarefaLi.appendChild(checkBox);
-        tarefaLi.appendChild(botaoExcluir);
+        ul.appendChild(tarefas);
+        tarefas.appendChild(checkBox);
+        tarefas.appendChild(botaoExcluir);
+
+        
 
     } else {}
 }
+
+
 
 
 

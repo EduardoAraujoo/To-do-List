@@ -14,5 +14,6 @@ botaoAdicionar.addEventListener("click", function (event) {
         var textoValidador = document.querySelector("#validando")
         textoValidador.innerHTML = "";
     }
-    form.reset();
+    updateTarefas();
+    form.reset();   
 })

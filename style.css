@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 * {
@@ -7,10 +6,10 @@
 	box-sizing: border-box;
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 200;
-	
+
 }
 
-.imagem{
+.imagem {
 	overflow: hidden;
 	background-image: url(images/meiying-ng-OrwkD-iWgqg-unsplash.jpg);
 	background-position: center bottom;
@@ -19,13 +18,16 @@
 	position: relative
 }
 
-body{
+body {
 	background-color: #eeeded;
 	margin: 0;
 }
-input, p{
+
+input,
+p {
 	color: rgb(36, 35, 35);
 }
+
 .container {
 	max-width: 600px;
 	margin: 0 auto;
@@ -60,10 +62,10 @@ input[type="text"] {
 }
 
 
-#botao{
-	padding: 10px;	
+#botao {
+	padding: 10px;
 	border: none;
-	cursor: pointer;	
+	cursor: pointer;
 	display: none;
 }
 
@@ -78,33 +80,35 @@ li {
 	padding: 10px;
 	background-color: #fff;
 	border-radius: 5px;
-    font-size: 20px;
+	font-size: 20px;
 	border-bottom: 1px solid #a8359f;
 }
 
-.valida{
+.valida {
 	display: none;
 }
-#validando{
+
+#validando {
 	color: #fff;
 	text-align: center;
 	margin-bottom: 5px;
 	font-size: 16px;
 }
 
-.excluir{
+.excluir {
 	background-color: #fff;
-	border: none;	
+	border: none;
 	display: flex;
 	font-size: 25px;
 	font-family: 'Gloria Hallelujah', cursive;
 	color: #1a1919;
 }
-.excluir:hover{
+
+.excluir:hover {
 	cursor: pointer;
 }
 
-		/* CHECKBOX */
+/* CHECKBOX */
 
 .check {
 	position: relative;
@@ -116,9 +120,13 @@ li {
 	transition: all .3s;
 	margin-left: auto;
 	margin-right: 7px;
-   }
-   
-   .check::before {
+}
+
+.check:hover {
+	cursor: pointer;
+}
+
+.check::before {
 	content: '';
 	position: absolute;
 	border: solid #fff;
@@ -133,35 +141,36 @@ li {
 	transform: rotate(0deg);
 	transition: all .3s;
 	transform-origin: center center;
-   }
-   
-   .check:checked {
+}
+
+.check:checked {
 	animation: a .3s ease-in forwards;
 	background-color: rgb(184, 79, 158);
-   }
-   
-   .check:checked::before {
+}
+
+.check:checked::before {
 	opacity: 1;
 	transform: rotate(405deg);
-   }
-   
-   @keyframes a {
+}
+
+@keyframes a {
 	0% {
-	 opacity: 1;
-	 transform: scale(1) rotateY(0deg);
+		opacity: 1;
+		transform: scale(1) rotateY(0deg);
 	}
-   
+
 	50% {
-	 opacity: 0;
-	 transform: scale(.8) rotateY(180deg);
+		opacity: 0;
+		transform: scale(.8) rotateY(180deg);
 	}
-   
+
 	100% {
-	 opacity: 1;
-	 transform: scale(1) rotateY(360deg);
+		opacity: 1;
+		transform: scale(1) rotateY(360deg);
 	}
-   }
-.risca{
+}
+
+.risca {
 	text-decoration: line-through;
 	opacity: 0.6;
 }
