@@ -1,4 +1,4 @@
-function createLiWithTask(form) {
+function createLiWithTask(form, tarefas) {
     if (botaoAdV == true) {
         var ul = document.getElementById("ul");
         var botaoExcluir = document.createElement("button");
