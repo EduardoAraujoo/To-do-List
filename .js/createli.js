@@ -1,39 +1,3 @@
-var botaoExcluir = document.querySelectorAll(".excluir");
-let ListaDeBotoes = [];
-console.log(typeof botaoExcluir);
-var botaoExV = false;
-
-
-
-var obj = new Object(
-
-    li = createLiWithTask(form),
-
-
-
-
-    // function deleteTarefa(botaoExcluir) {
-    //      for (var i = 0; i < ListaDeBotoes.length; i++) {
-    //         botaoExcluir[i].addEventListener("click", function (event) {
-    //             
-
-    //             console.log("bom dia")
-    //         })
-    //     }
-    // }
-
-);
-// for (var i = 0; i < botaoExcluir.length; i++) {
-//     const botao = botaoExcluir[i];
-//     botao.addEventListener("click", function () {
-// const item = this.parentNode;
-//             item.remove();
-//         console.log("fui clicado");
-//     })
-// };
-
-
-
 function createLiWithTask(form) {
     if (botaoAdV == true) {
         var ul = document.getElementById("ul");
@@ -46,12 +10,22 @@ function createLiWithTask(form) {
             paiAlvo.remove();
         })
 
+        //ADICIONANDO CLASSES E TYPES   
+
         botaoExcluir.classList.add("excluir")
         botaoExcluir.innerHTML = "X";
         ListaDeBotoes.push(botaoExcluir);
 
         checkBox.classList.add("check");
         checkBox.type = 'checkbox';
+
+        checkBox.addEventListener('change', function () {
+            if (this.checked) {
+                tarefaLi.classList.add("risca");
+            } else {
+                tarefaLi.classList.remove("risca");
+            }
+        });
 
         var tarefaLi = document.createElement("li");
 
@@ -65,11 +39,10 @@ function createLiWithTask(form) {
         ul.appendChild(tarefaLi);
         tarefaLi.appendChild(checkBox);
         tarefaLi.appendChild(botaoExcluir);
-        
+
     } else {}
 }
 
-console.log(ListaDeBotoes);
 
 
 

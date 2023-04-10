@@ -1,21 +1,11 @@
-const botaoAdicionar = document.querySelector("#botao");
-botaoAdV = false;
+var botaoExcluir = document.querySelectorAll(".excluir");
+let ListaDeBotoes = [];
+console.log(typeof botaoExcluir);
+var botaoExV = false;
+var obj = new Object(li = createLiWithTask(form));
 
-botaoAdicionar.addEventListener("click", function (event) {
-    event.preventDefault();
-    botaoAdV = true;
-    var form = document.querySelector("#form");
 
-    if (form.principal.value === "") {
-        var valida = document.querySelector("#validando");
-        valida.classList.remove("valida");
-    } else {
-        createLiWithTask(form);
-        var textoValidador = document.querySelector("#validando")
-        textoValidador.innerHTML = "";
-    }
-    form.reset();
-})
+
 
 
 
