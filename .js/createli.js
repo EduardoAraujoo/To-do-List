@@ -1,3 +1,5 @@
+
+
 function createLiWithTask(form, tarefas) {
     if (botaoAdV == true) {
         var ul = document.getElementById("ul");
@@ -28,23 +30,23 @@ function createLiWithTask(form, tarefas) {
             }
         });
 
-        var tarefas = document.createElement("li");
-
+        tarefas = document.createElement("li");
+        tarefas.textContent = form.principal.value;
         tarefas.classList.add("invisivel");
         tarefas.classList.add("tarefa");
         tarefas.classList.add("tipo-de-texto");
-        tarefas.textContent = form.principal.value;
+        
 
         //AFILIANDO 
 
         ul.appendChild(tarefas);
         tarefas.appendChild(checkBox);
         tarefas.appendChild(botaoExcluir);
-
-        
-
-    } else {}
+    } else { }
 }
+
+
+
 
 
 
