@@ -9,6 +9,27 @@
 
 }
 
+:root{
+	--MainColor: #eeeded;
+    --TextColors: #fff;
+	--ButtonColor: #1a1919;
+	--CheckColor: rgb(236, 102, 203);
+	--CheckedColor: rgb(184, 79, 158);
+	--p: rgb(36, 35, 35);
+	--border:#a8359f;
+	--inputColor:#fff;
+}
+.dark-theme{
+	--MainColor: #161515;
+    --TextColors: #292828;
+	--ButtonColor: #e0dddd;
+	--CheckColor: rgb(84, 8, 146);
+	--CheckedColor: rgb(55, 12, 80);
+	--p: rgb(84, 8, 146);
+	--border:#5f0758;
+	--inputColor:#500966;
+}
+
 .imagem {
 	overflow: hidden;
 	background-image: url(images/meiying-ng-OrwkD-iWgqg-unsplash.jpg);
@@ -19,13 +40,15 @@
 }
 
 body {
-	background-color: #eeeded;
+	background-color: var(--MainColor);
 	margin: 0;
 }
 
-input,
+input{
+	background: var(--inputColor);
+}
 p {
-	color: rgb(36, 35, 35);
+	color: var(--p);
 }
 
 .container {
@@ -40,7 +63,7 @@ p {
 h1 {
 	text-align: center;
 	margin-bottom: 20px;
-	color: #ffffff;
+	color: var(--TextColors);
 	letter-spacing: 6px;
 	font-size: 42px;
 }
@@ -78,10 +101,10 @@ li {
 	display: flex;
 	align-items: center;
 	padding: 10px;
-	background-color: #fff;
+	background-color: var(--TextColors);
 	border-radius: 5px;
 	font-size: 20px;
-	border-bottom: 1px solid #a8359f;
+	border-bottom: 1px solid var(--border);
 }
 
 .valida {
@@ -89,19 +112,19 @@ li {
 }
 
 #validando {
-	color: #fff;
+	color: var(--TextColors);
 	text-align: center;
 	margin-bottom: 5px;
 	font-size: 16px;
 }
 
 .excluir {
-	background-color: #fff;
+	background-color: var(--TextColors);
 	border: none;
 	display: flex;
 	font-size: 25px;
 	font-family: 'Gloria Hallelujah', cursive;
-	color: #1a1919;
+	color: var(--ButtonColor);
 }
 
 .excluir:hover {
@@ -116,7 +139,7 @@ li {
 	height: 20px;
 	border-radius: 2px;
 	appearance: none;
-	background-color: rgb(236, 102, 203);
+	background-color: var(--CheckColor);
 	transition: all .3s;
 	margin-left: auto;
 	margin-right: 7px;
@@ -129,7 +152,7 @@ li {
 .check::before {
 	content: '';
 	position: absolute;
-	border: solid #fff;
+	border: solid var(--TextColors);
 	display: block;
 	width: .3em;
 	height: .6em;
@@ -145,7 +168,7 @@ li {
 
 .check:checked {
 	animation: a .3s ease-in forwards;
-	background-color: rgb(184, 79, 158);
+	background-color: var(--CheckedColor);
 }
 
 .check:checked::before {

@@ -1,0 +1,36 @@
+.gg-moon,
+.gg-moon::after {
+ display: block;
+ box-sizing: border-box;
+ border-radius: 50%
+}
+
+.gg-moon {
+ overflow: hidden;
+ position: relative;
+ transform: rotate(-135deg) scale(var(--ggs,1));
+ width: 40px;
+ height: 40px;
+ border: 2px solid;
+ border-bottom-color: transparent
+}
+
+.gg-moon::after {
+ content: "";
+ position: absolute;
+ width: 30px;
+ height: 35px;
+ border: 2px solid transparent;
+ box-shadow: 0 0 0 2px;
+ top: 8px;
+ left: 2px
+} 
+.gg-moon:hover{
+    cursor: pointer;
+}
+
+.lua{
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 45px;
+}

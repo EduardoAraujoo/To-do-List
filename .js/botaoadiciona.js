@@ -1,20 +1,24 @@
 
 const botaoAdicionar = document.querySelector("#botao");
-botaoAdV = false;
+
 var valida = document.querySelector("#validando");
+var input = document.querySelector("#principal")
+var form = document.querySelector("#form");
 
+botaoAdV = false;
 
-botaoAdicionar.addEventListener("click", function (event) {
+form.addEventListener("submit", function (event) {
     event.preventDefault();
     botaoAdV = true;
-    var form = document.querySelector("#form");
-    if (form.principal.value !== "") {
-        valida.classList.add("valida");
-        createLiWithTask(form);
-        updateTarefas();
-        form.reset();
 
+    if (input.value !== "") {
+        valida.classList.add("valida");
+        createLiWithTask(input);
+        
+        form.reset();
     } else {
         valida.classList.remove("valida");
     }
 })
+
+

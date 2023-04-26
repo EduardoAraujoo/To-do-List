@@ -1,6 +1,6 @@
 
 
-function createLiWithTask(form, tarefas) {
+function createLiWithTask(input, tarefasLocal) {
     if (botaoAdV == true) {
         var ul = document.getElementById("ul");
         var botaoExcluir = document.createElement("button");
@@ -10,7 +10,6 @@ function createLiWithTask(form, tarefas) {
             var alvo = event.target;
             var paiAlvo = alvo.parentNode;
             paiAlvo.remove();
-            updateTarefas();
         })
 
         //ADICIONANDO CLASSES E TYPES   
@@ -24,24 +23,23 @@ function createLiWithTask(form, tarefas) {
 
         checkBox.addEventListener('change', function () {
             if (this.checked) {
-                tarefas.classList.add("risca");
+                tarefasLocal.classList.add("risca");
             } else {
-                tarefas.classList.remove("risca");
+                tarefasLocal.classList.remove("risca");
             }
         });
 
-        tarefas = document.createElement("li");
-        tarefas.textContent = form.principal.value;
-        tarefas.classList.add("invisivel");
-        tarefas.classList.add("tarefa");
-        tarefas.classList.add("tipo-de-texto");
-        
+        tarefasLocal = document.createElement("li");
+        tarefasLocal.textContent = input.value;
+        tarefasLocal.classList.add("invisivel");
+        tarefasLocal.classList.add("tarefa");
+        tarefasLocal.classList.add("tipo-de-texto");
 
         //AFILIANDO 
 
-        ul.appendChild(tarefas);
-        tarefas.appendChild(checkBox);
-        tarefas.appendChild(botaoExcluir);
+        ul.appendChild(tarefasLocal);
+        tarefasLocal.appendChild(checkBox);
+        tarefasLocal.appendChild(botaoExcluir);
     } else { }
 }
 
