@@ -22,12 +22,12 @@
 .dark-theme{
 	--MainColor: #161515;
     --TextColors: #292828;
-	--ButtonColor: #e0dddd;
-	--CheckColor: rgb(84, 8, 146);
-	--CheckedColor: rgb(55, 12, 80);
+	--ButtonColor: #8400ff;
+	--CheckColor: #8400ff;
+	--CheckedColor: #5904a8;
 	--p: rgb(84, 8, 146);
-	--border:#5f0758;
-	--inputColor:#500966;
+	--border:#8400ff;
+	--inputColor:#292828;
 }
 
 .imagem {
