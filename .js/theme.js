@@ -1,7 +1,7 @@
 var body = document.querySelector("body");
 var sun = document.querySelector(".gg-sun");
 var moon = document.querySelector(".gg-moon");
-var buttonToggle = document.querySelector("")
+
 
 var i = document.getElementById("trocar");
 

@@ -26,9 +26,11 @@
     left: 2px
 }
 
-.gg-moon:hover {
+.gg-moon:hover,
+.gg-sun:hover {
     cursor: pointer;
 }
+
 
 .lua {
     margin: auto;
